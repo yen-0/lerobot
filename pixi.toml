@@ -75,5 +75,17 @@ train = "python scripts/so101.py train"              # usage: pixi run train --r
 eval = "python scripts/so101.py eval"                # usage: pixi run eval --policy <ckpt> --task "..." --repo-id eval_name
 policy-test = "python scripts/so101.py policy-test"  # offline inference smoke test (no robot needed)
 
+# --- Kinematic snake world-model research pipeline -------------------------
+snake-export = "python -m snake_world.cli export"
+snake-track-object = "python -m snake_world.cli track-object"
+snake-train = "python -m snake_world.cli train"
+snake-eval = "python -m snake_world.cli eval"
+snake-benchmark = "python -m snake_world.cli benchmark"
+snake-viz = "python -m snake_world.cli viz"
+snake-viz-rollout = "python -m snake_world.cli viz-rollout"
+snake-viz-rerun = "python -m snake_world.cli viz-rerun"
+snake-plan-offline = "python -m snake_world.cli plan-offline"
+snake-plan-robot = "python -m snake_world.cli plan-robot"
+
 # Low-level fallback if you prefer raw lerobot port detection:
 find-port = "lerobot-find-port"
